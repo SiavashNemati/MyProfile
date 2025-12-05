@@ -1,11 +1,18 @@
 body {
     background-color:#1f242d;
+    padding: 0;
+    margin: 0;
+
 }
 
 #nav {
     background-color:#1f242d;
     
 }
+
+
+
+
 .navbar a{
     color: #7cf03d;
     font-weight: 500;
@@ -16,3 +23,111 @@ body {
     align-content: center;
 }
 
+  .imgcolpo img{
+    width: 250px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.profileH2{
+    margin-bottom: 6%;
+}
+
+
+
+
+.navbar .nav-link{
+    color: #ffffff;
+    font-weight: 500;
+    transition: .3s;
+}
+
+
+.navbar .nav-link:hover{
+    color: #7cf03d;
+    font-weight: 500;
+    transition: .3s;
+}
+
+
+/*
+
+.container.about {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+*/
+/*.aboutcol {
+    opacity: 0;
+    transform: translateY(100px); /* شروع از پایین 
+    animation: slideUp 3s ease-out forwards;}
+*/
+/* متن */
+
+
+
+
+
+/* انیمیشن
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+*/
+
+#about .box {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+#about .box.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/*--------------------------------------------------------------------*/
+
+#skills{
+    background-color: #bcbfc5;
+    
+}
+
+.c {
+    align-items: center;
+    height: 250px;
+    width:250px;
+    border:1px solid #bcbfc5 ;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: white;
+    border-radius:4px;
+}
+
+#skills .col-md-4 {
+    display: flex;
+    justify-content: center;  /* وسط افقی */
+    align-items: center;      /* وسط عمودی */
+}
+
+
+
+section{
+    height: 100vh;
+    
+}
