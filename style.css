@@ -1,9 +1,19 @@
+    
 body {
     background-color:#1f242d;
     padding: 0;
     margin: 0;
 
 }
+
+
+
+section{
+    height: 100vh;
+    
+}
+
+
 
 #nav {
     background-color:#1f242d;
@@ -14,7 +24,7 @@ body {
 
 
 .navbar a{
-    color: #7cf03d;
+    color:rgb(28, 28, 28);
     font-weight: 500;
 }
 
@@ -48,6 +58,59 @@ body {
     font-weight: 500;
     transition: .3s;
 }
+/*-----------portfolio---------------------------------------------------------*/
+
+#portfolio
+
+
+
+
+.col-md-8 h3 span{
+    position: absolute;
+    color: yellow;
+    color: transparent;
+    -webkit-text-stroke: .7px yellow;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s *var(--i));
+}
+
+@keyframes display-text {
+    25%,
+    100%{
+        display: none;
+    }
+}
+
+
+@keyframes fill-text {
+    10%,
+    100%{
+        width: 0;
+    }
+
+    70%,
+    90%{
+        width: 100%;
+    }
+
+}
+
+
+.col-md-8 h3 span::before{
+    
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    border-left: 2px solid yellow;
+    color: yellow;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite ;
+}
+
+
+
+
 
 
 /*
@@ -88,7 +151,27 @@ body {
 
 */
 
+
+/*-----------#about---------------------------------------------------------*/
+
+#about{
+    background: linear-gradient(rgba(28, 28, 28,0.8),rgba(28, 28, 28,0.8)),url(/img/5026.png);
+/*-----------#about---background-image: url(/img/5026.png);------------------------------------------------------*/
+
+    
+
+
+}
+
+#about .col-md-6{
+
+    
+    background-color:rgba(var(--bs-secondary-bg-rgb), .5);    
+}
+
+
 #about .box {
+    
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.8s ease-out;
@@ -101,14 +184,31 @@ body {
 
 
 
-/*--------------------------------------------------------------------*/
+/*-----------#skills---------------------------------------------------------*/
 
 #skills{
     background-color: #bcbfc5;
     
 }
 
-.c {
+
+
+.c-skills .boxicon-skills{
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    display: flex;
+    font-size: 120px;
+}
+
+.boxicon-skills i{
+    box-shadow: 0px 15px 25px rgba( 0,0, 0,0.3);
+
+    /*border:1px solid #1f242d ;*/
+    border-radius: 50%;
+}
+
+.c-skills  {
     align-items: center;
     height: 250px;
     width:100%;
@@ -117,6 +217,7 @@ body {
     margin-right: 2px;
     background-color: white;
     border-radius:15px;
+    box-shadow: 0px 15px 25px rgba( 0,0, 0,0.3);
 }
 
 #skills .col-md-4 {
@@ -126,14 +227,7 @@ body {
 }
 
 
-
-section{
-    height: 100vh;
-    
-}
-
-
-
+/*-----------#skills---------------------------------------------------------*/
 
 
  .boxx {
@@ -173,4 +267,8 @@ section{
       transform: translateX(0);
       opacity: 1;
     }
+  }
+
+  .boxx .boxicon{
+    font-size: 34px;
   }

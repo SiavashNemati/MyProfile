@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -14,7 +14,7 @@
 
     
  <!--navbar start-->
-    <nav id="nav" class="navbar navbar-expand-lg ">
+    <nav id="nav" class="navbar navbar-expand-lg fixed ">
         <div class="container ">
           <a class="navbar-brand ms-auto " href="#">.Portfolio</a>
          
@@ -51,9 +51,13 @@
  <section id="portfolio" class="container  align-items-center align-content-center ">
   <div class="row  ">
     <div class="col1 col-md-8 text-white  ">
-      <h2 class="profileH2">سیاوش زارع نعمتی</h1>
-      <h4 class=" "  >برنامه نویس <span>Front-End</span> هستم</h2>
-      
+      <h2 class="profileH2">سیاوش زارع نعمتی</h2>
+      <h4 class="ph4" >برنامه نویس <span>Front-End</span> هستم</h4>
+      <h3 class="ph3 mt-3">
+          <span style="--i:0" date-text="Web Site Design">Web Site Design</span> 
+          <span style="--i:1" date-text="Modern JavaScript">Modern JavaScript</span>
+          <span style="--i:2" date-text="SQL Design & Develope">SQL Design & Develope</span>
+      </h3>
     </div>
 
     <div  class="imgcolpo col-md-4 text-white"><img src="/s.jpg" alt="" > </div>
@@ -72,9 +76,9 @@
     <div class="box text-white ">
       <div class="row" style="margin-top:5%">
            <div class="col-md-3"></div>
-           <div class="col-md-6">
+           <div class="col-md-6" >
 
-            <h3 style="text-align: center">درباره سیاوش زارع نعمتی</h3><br>
+            <h3 style="text-align:center">درباره سیاوش زارع نعمتی</h3><br>
             <br>
             <p>من متولد سال 74 و دانش آموخته دانشگاه آزاد در رشته عمران هستم.</p>
 <p style="text-align: justify;line-height: 3rem;">به دلیل علاقه به برنامه نویسی وارد زمینه برنامه نویسی فرانت اند و طراحی سایت شدم و به همین دلیل شروع به گذراندن دوره هایی برای یادگیری این حرفه کردم  که در قسمت مهارت های من میتوانید  لیست دوره های گذرانده شده من رو ببینید</p>
@@ -100,24 +104,79 @@
       <div class="row mb-3"><h3 style="text-align: center ;line-height: 81px;">مهارت ها و دوره های گذرانده من</h3></div>
       <div class="row gy-2">
         <div class="col-md-4">
-          <div class="c"></div>
+
+          <div class="c-skills d-flex justify-content-center ">
+            <div class="boxicon-skills"> <i class="ri-bootstrap-fill"></i><i class="ri-html5-fill"></i><i class="ri-css3-fill"></i>
+            </div>
+
+
+          </div>
         </div>
         <div class=" col-md-4">
-          <div class="c"></div>
+          <div class="c-skills d-flex justify-content-center ">
+            <div class="boxicon-skills"> <i class="ri-javascript-fill"></i>
+            </div>
+          </div>
         </div>
         <div class=" col-md-4 gy-2">
-          <div class="c"></div>
+          <div class="c-skills d-flex justify-content-center ">
+            <div class="boxicon-skills"> <i class="ri-database-2-fill"></i>
+            </div>
+          </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
       <div class="row mt-2 gy-2">
         <div class="col-md-4">
-          <div class="c"></div>
+          <div class="c-skills d-flex justify-content-center ">
+
+            <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><span>Web Site Design</span> </h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">موسسه فرا تر از دانش </h6>
+    <p class="card-text">به مدت 42 ساعت دوره کاربردی طراحی وب سایت گذرانده شده است</p>
+    <a href="#" class="card-link">مشاهده فایل</a>
+  </div>
+</div>
+
+          </div>
         </div>
         <div class=" col-md-4">
-          <div class="c"></div>
+          <div class="c-skills d-flex justify-content-center ">
+
+            <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Modern JavaScript</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">موسسه فرا تر از دانش </h6>
+    <p class="card-text">به مدت 24 ساعت دوره کاربردی طراحی وب سایت گذرانده شده است</p>  
+    <a href="#" class="card-link">مشاهده فایل</a>
+
+  </div>
+</div>
+
+          </div>
         </div>
         <div class=" col-md-4">
-          <div class="c"></div>
+          <div class="c-skills d-flex justify-content-center ">
+
+            <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">SQL Design & Develope</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+    <p class="card-text">آشنایی با با دیتا بیس و مدیریت داده ها و جداول </p>
+    
+    <a href="" class="card-link">فاقد مدرک</a>
+  </div>
+</div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -134,20 +193,50 @@
 
  <!--countact me start-->
  <section id="countactme">
-
-
   <div class="container py-5">
     <div class="row g-3">
       <div class="col-md-4">
-        <div class="boxx">1</div>
+        <div class="boxx">
+          <div class="boxicon">
+            <i class="ri-phone-line"></i>
+          </div>
+          شماره تماس :09309502746</div>
       </div>
       <div class="col-md-4">
-        <div class="boxx">2</div>
+        <div class="boxx">
+          <div class="boxicon"> <i class="ri-mail-line"></i>
+          </div>
+          siavash.nemati99@gmail.com : ایمیل من
+        </div>
       </div>
       <div class="col-md-4">
-        <div class="boxx">3</div>
+        <div class="boxx">
+          <div class="boxicon"><i class="ri-linkedin-box-line"></i>
+          </div>
+         : لینکدین
+          </div>
       </div>
     </div>
+      <!--
+
+
+    <div class="row g-3">
+      <div class="d-grid">
+        <div class="boxx">1</div>
+      
+      </div>
+    </div>
+
+
+
+
+
+      -->
+
+
+
+
+
   </div>
  </section>
  <!--countact me end-->
@@ -193,7 +282,7 @@ const observer = new IntersectionObserver(entries => {
 boxes.forEach(box => observer.observe(box));
 </script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+ <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>    
 
   </body>
   
